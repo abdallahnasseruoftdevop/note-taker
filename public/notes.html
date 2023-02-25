@@ -1,0 +1,70 @@
+<!-- Start of HTML document -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Start of head -->
+  <head>
+    <!-- Set character encoding -->
+    <meta charset="UTF-8">
+    <!-- Set viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set IE compatibility mode -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Set page title -->
+    <title>Note Taker</title>
+    <!-- Add Bootstrap CSS library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
+    <!-- Add Font Awesome CSS library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
+    <!-- Add custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+  </head>
+  <!-- End of head -->
+  <!-- Start of body -->
+  <body>
+    <!-- Start of navbar -->
+    <nav style="background-color: #89CFF0;" class="navbar navbar-dark bg-dark">
+      <!-- Add navbar brand with link to home page -->
+      <a style="color: black;" class="navbar-brand" href="/">Note Taker</a>
+      <!-- Add icons for saving notes and creating new notes -->
+      <div class="icons">
+        <i class="fas fa-save text-light save-note"></i>
+        <i class="fas fa-pen text-light new-note"></i>
+      </div>
+    </nav>
+    <!-- End of navbar -->
+    <!-- Start of main content container -->
+    <div class="container-fluid">
+      <!-- Start of row for note list and note editor -->
+      <div class="row">
+        <!-- Start of column for note list -->
+        <div class="col-4 list-container">
+          <!-- Add card for note list -->
+          <div class="card">
+            <!-- Add unordered list for note items -->
+            <ul class="list-group"></ul>
+          </div>
+        </div>
+        <!-- End of column for note list -->
+        <!-- Start of column for note editor -->
+        <div class="col-8">
+          <!-- Add input field for note title -->
+          <input class="note-title" placeholder="Note Title" maxlength="28" type="text">
+          <!-- Add textarea for note text -->
+          <textarea class="note-textarea" placeholder="Note Text"></textarea>
+        </div>
+        <!-- End of column for note editor -->
+      </div>
+      <!-- End of row for note list and note editor -->
+    </div>
+    <!-- End of main content container -->
+    <!-- Add jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Add custom JavaScript -->
+    <script src="/assets/js/index.js"></script>
+  </body>
+  <!-- End of body -->
+</html>
+<!-- End of HTML document -->
+
+
